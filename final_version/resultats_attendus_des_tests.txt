@@ -1,0 +1,222 @@
+dans le fichier test.ml les commandes suivantes : 
+
+	let sol_one = solve p_one;;
+	let sol_two = solve p_two;;
+	let sol_three = solve p_three;;
+	let sol_four = solve p_four;;
+	let sol_five = solve p_five;;
+	let sol_six = solve p_six;;
+
+devraient produir les résultats suivants:
+
+	val sol_one : HKakero.solution =
+	  [[Nothing; Nothing; Island 3;
+	    Bridge {isVertical = true; isDoubled = false}; Island 3];
+	   [Nothing; Nothing; Bridge {isVertical = false; isDoubled = true}; Nothing;
+	    Bridge {isVertical = false; isDoubled = true}];
+	   [Island 2; Bridge {isVertical = true; isDoubled = true}; Island 8;
+	    Bridge {isVertical = true; isDoubled = true}; Island 5];
+	   [Nothing; Nothing; Bridge {isVertical = false; isDoubled = true}; Nothing;
+	    Bridge {isVertical = false; isDoubled = false}];
+	   [Nothing; Nothing; Island 4; Bridge {isVertical = true; isDoubled = true};
+	    Island 3]]
+
+	val sol_two : HKakero.solution =
+	  [[Island 4; Bridge {isVertical = true; isDoubled = true};
+	    Bridge {isVertical = true; isDoubled = true}; Island 4;
+	    Bridge {isVertical = true; isDoubled = false}; Island 2; Nothing];
+	   [Bridge {isVertical = false; isDoubled = true}; Nothing; Island 1;
+	    Bridge {isVertical = false; isDoubled = false}; Nothing;
+	    Bridge {isVertical = false; isDoubled = false}; Nothing];
+	   [Bridge {isVertical = false; isDoubled = true}; Nothing;
+	    Bridge {isVertical = false; isDoubled = false};
+	    Bridge {isVertical = false; isDoubled = false}; Nothing;
+	    Bridge {isVertical = false; isDoubled = false}; Island 1];
+	   [Island 4; Bridge {isVertical = true; isDoubled = false}; Island 4;
+	    Bridge {isVertical = false; isDoubled = false}; Nothing;
+	    Bridge {isVertical = false; isDoubled = false};
+	    Bridge {isVertical = false; isDoubled = false}];
+	   [Bridge {isVertical = false; isDoubled = false}; Nothing;
+	    Bridge {isVertical = false; isDoubled = true};
+	    Bridge {isVertical = false; isDoubled = false}; Nothing;
+	    Bridge {isVertical = false; isDoubled = false}; Island 3];
+	   [Bridge {isVertical = false; isDoubled = false}; Nothing; Island 2;
+	    Bridge {isVertical = false; isDoubled = false}; Nothing; Island 1;
+	    Bridge {isVertical = false; isDoubled = true}];
+	   [Island 3; Bridge {isVertical = true; isDoubled = true};
+	    Bridge {isVertical = true; isDoubled = true}; Island 5;
+	    Bridge {isVertical = true; isDoubled = true};
+	    Bridge {isVertical = true; isDoubled = true}; Island 4]]
+
+	val sol_three : HKakero.solution =
+	  [[Nothing; Island 2; Bridge {isVertical = true; isDoubled = true};
+	    Island 4; Bridge {isVertical = true; isDoubled = true};
+	    Bridge {isVertical = true; isDoubled = true}; Island 3];
+	   [Nothing; Nothing; Nothing; Nothing; Nothing; Nothing;
+	    Bridge {isVertical = false; isDoubled = false}];
+	   [Island 1; Bridge {isVertical = true; isDoubled = false}; Island 4;
+	    Bridge {isVertical = true; isDoubled = false};
+	    Bridge {isVertical = true; isDoubled = false};
+	    Bridge {isVertical = true; isDoubled = false}; Island 3];
+	   [Nothing; Nothing; Bridge {isVertical = false; isDoubled = true}; Nothing;
+	    Nothing; Nothing; Bridge {isVertical = false; isDoubled = false}];
+	   [Island 3; Bridge {isVertical = true; isDoubled = true}; Island 5;
+	    Bridge {isVertical = true; isDoubled = false};
+	    Bridge {isVertical = true; isDoubled = false}; Island 1;
+	    Bridge {isVertical = false; isDoubled = false}];
+	   [Bridge {isVertical = false; isDoubled = false}; Island 1;
+	    Bridge {isVertical = true; isDoubled = false};
+	    Bridge {isVertical = true; isDoubled = false};
+	    Bridge {isVertical = true; isDoubled = false};
+	    Bridge {isVertical = true; isDoubled = false}; Island 2];
+	   [Island 1; Nothing; Nothing; Nothing; Nothing; Nothing; Nothing]]
+
+	val sol_four : HKakero.solution =
+	  [[Island 2; Bridge {isVertical = true; isDoubled = false};
+	    Bridge {isVertical = true; isDoubled = false};
+	    Bridge {isVertical = true; isDoubled = false};
+	    Bridge {isVertical = true; isDoubled = false};
+	    Bridge {isVertical = true; isDoubled = false}; Island 2];
+	   [Bridge {isVertical = false; isDoubled = false}; Island 2;
+	    Bridge {isVertical = true; isDoubled = true};
+	    Bridge {isVertical = true; isDoubled = true}; Island 3; Nothing;
+	    Bridge {isVertical = false; isDoubled = false}];
+	   [Island 3; Bridge {isVertical = true; isDoubled = false};
+	    Bridge {isVertical = true; isDoubled = false}; Island 1;
+	    Bridge {isVertical = false; isDoubled = false}; Nothing;
+	    Bridge {isVertical = false; isDoubled = false}];
+	   [Bridge {isVertical = false; isDoubled = false}; Island 1;
+	    Bridge {isVertical = true; isDoubled = false};
+	    Bridge {isVertical = true; isDoubled = false}; Island 5;
+	    Bridge {isVertical = true; isDoubled = true}; Island 4];
+	   [Island 1; Nothing; Nothing; Nothing;
+	    Bridge {isVertical = false; isDoubled = false}; Nothing;
+	    Bridge {isVertical = false; isDoubled = false}];
+	   [Nothing; Nothing; Nothing; Nothing;
+	    Bridge {isVertical = false; isDoubled = false}; Nothing; Island 1];
+	   [Island 1; Bridge {isVertical = true; isDoubled = false};
+	    Bridge {isVertical = true; isDoubled = false};
+	    Bridge {isVertical = true; isDoubled = false}; Island 2; Nothing;
+	    Nothing]]
+
+	val sol_five : HKakero.solution =
+	  [[Nothing; Nothing; Island 1; Nothing; Island 1;
+	    Bridge {isVertical = true; isDoubled = false}; Island 3];
+	   [Island 2; Nothing; Bridge {isVertical = false; isDoubled = false};
+	    Nothing; Nothing; Nothing; Bridge {isVertical = false; isDoubled = true}];
+	   [Bridge {isVertical = false; isDoubled = true}; Nothing;
+	    Bridge {isVertical = false; isDoubled = false}; Nothing; Nothing;
+	    Nothing; Bridge {isVertical = false; isDoubled = true}];
+	   [Island 6; Bridge {isVertical = true; isDoubled = true}; Island 6;
+	    Bridge {isVertical = true; isDoubled = false};
+	    Bridge {isVertical = true; isDoubled = false};
+	    Bridge {isVertical = true; isDoubled = false}; Island 5];
+	   [Bridge {isVertical = false; isDoubled = true}; Nothing;
+	    Bridge {isVertical = false; isDoubled = true}; Island 1; Nothing;
+	    Island 1; Bridge {isVertical = false; isDoubled = true}];
+	   [Bridge {isVertical = false; isDoubled = true}; Nothing; Island 2;
+	    Bridge {isVertical = false; isDoubled = false}; Nothing;
+	    Bridge {isVertical = false; isDoubled = false}; Island 2];
+	   [Island 3; Bridge {isVertical = true; isDoubled = false};
+	    Bridge {isVertical = true; isDoubled = false}; Island 3;
+	    Bridge {isVertical = true; isDoubled = false}; Island 2; Nothing]]
+
+	val sol_six : HKakero.solution =
+	  [[Island 4; Bridge {isVertical = true; isDoubled = true}; Island 6;
+	    Bridge {isVertical = true; isDoubled = true};
+	    Bridge {isVertical = true; isDoubled = true}; Island 4;
+	    Bridge {isVertical = true; isDoubled = false};
+	    Bridge {isVertical = true; isDoubled = false}; Island 3];
+	   [Bridge {isVertical = false; isDoubled = true}; Nothing;
+	    Bridge {isVertical = false; isDoubled = true}; Nothing; Nothing;
+	    Bridge {isVertical = false; isDoubled = false}; Nothing; Island 1;
+	    Bridge {isVertical = false; isDoubled = true}];
+	   [Island 4; Bridge {isVertical = true; isDoubled = true}; Island 8;
+	    Bridge {isVertical = true; isDoubled = true}; Island 2;
+	    Bridge {isVertical = false; isDoubled = false}; Nothing;
+	    Bridge {isVertical = false; isDoubled = false}; Island 3];
+	   [Nothing; Nothing; Bridge {isVertical = false; isDoubled = true}; Nothing;
+	    Nothing; Island 3; Bridge {isVertical = true; isDoubled = true};
+	    Island 5; Bridge {isVertical = false; isDoubled = false}];
+	   [Nothing; Nothing; Island 4;
+	    Bridge {isVertical = true; isDoubled = false}; Island 2; Nothing;
+	    Nothing; Bridge {isVertical = false; isDoubled = true}; Island 2];
+	   [Island 2; Nothing; Bridge {isVertical = false; isDoubled = false};
+	    Nothing; Bridge {isVertical = false; isDoubled = false}; Island 2;
+	    Bridge {isVertical = true; isDoubled = true}; Island 4;
+	    Bridge {isVertical = false; isDoubled = false}];
+	   [Bridge {isVertical = false; isDoubled = true}; Nothing;
+	    Bridge {isVertical = false; isDoubled = false}; Island 1;
+	    Bridge {isVertical = false; isDoubled = false}; Nothing; Island 2;
+	    Bridge {isVertical = true; isDoubled = false}; Island 3];
+	   [Bridge {isVertical = false; isDoubled = true}; Nothing; Island 1;
+	    Bridge {isVertical = false; isDoubled = false}; Island 1; Nothing;
+	    Bridge {isVertical = false; isDoubled = false}; Nothing;
+	    Bridge {isVertical = false; isDoubled = false}];
+	   [Island 3; Bridge {isVertical = true; isDoubled = false};
+	    Bridge {isVertical = true; isDoubled = false}; Island 3;
+	    Bridge {isVertical = true; isDoubled = false};
+	    Bridge {isVertical = true; isDoubled = false}; Island 3;
+	    Bridge {isVertical = true; isDoubled = false}; Island 2]]
+
+
+l'execution du fichier test produit après la compilation devrait produire l'affichage
+suivant:
+	########### Puzzle 1 ###########
+	  2  
+	  H  
+	3=8=4
+	| H H
+	3=5-3
+
+
+	########### Puzzle 2 ###########
+	4==4--3
+	H  |  H
+	H1-4=2H
+	4-----5
+	|     H
+	2----1H
+	  1-3=4
+
+
+	########### Puzzle 3 ###########
+	  1 3-1
+	2 | H1 
+	H 4=5| 
+	4 | || 
+	H | || 
+	H | 1| 
+	3-3--2 
+
+
+	########### Puzzle 4 ###########
+	2-3-1 1
+	|2|1  |
+	|H||  |
+	|H1|  |
+	|3-5--2
+	|  H   
+	2--4-1 
+
+
+	########### Puzzle 5 ###########
+	 2=6==3
+	   H  |
+	1--6=2|
+	   |1-3
+	1  |  |
+	|  |1-2
+	3==5=2 
+
+
+	########### Puzzle 6 ###########
+	4=4  2==3
+	H H     |
+	6=8=4--1|
+	H H | 1-3
+	H 2 2--1|
+	4--3 2  |
+	|  H H2-3
+	|1-5=4| |
+	3=3-2-3-2
